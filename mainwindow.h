@@ -22,6 +22,19 @@ private slots:
 
     void on_del_clicked();
 
+    void on_finish_clicked();
+
+    void on_square_clicked();
+
+    void on_squareRoot_clicked();
+
+    void on_ce_clicked();
+
+
+    void on_inver_clicked();
+
+    void on_pre_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
