@@ -13,6 +13,12 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="windowIcon">
+   <iconset theme="QIcon::ThemeIcon::EditSelectAll"/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 14pt &quot;Microsoft YaHei UI&quot;;</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <property name="spacing">
@@ -156,7 +162,7 @@
        </widget>
       </item>
       <item row="1" column="2">
-       <widget class="QPushButton" name="C">
+       <widget class="QPushButton" name="right">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -164,7 +170,7 @@
          </sizepolicy>
         </property>
         <property name="text">
-         <string>C</string>
+         <string>)</string>
         </property>
        </widget>
       </item>
@@ -208,7 +214,7 @@
        </widget>
       </item>
       <item row="1" column="1">
-       <widget class="QPushButton" name="ce">
+       <widget class="QPushButton" name="left">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -216,7 +222,7 @@
          </sizepolicy>
         </property>
         <property name="text">
-         <string>CE</string>
+         <string>(</string>
         </property>
        </widget>
       </item>
@@ -234,7 +240,7 @@
        </widget>
       </item>
       <item row="2" column="1">
-       <widget class="QPushButton" name="square">
+       <widget class="QPushButton" name="power">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -242,7 +248,7 @@
          </sizepolicy>
         </property>
         <property name="text">
-         <string>x^2</string>
+         <string>^</string>
         </property>
        </widget>
       </item>
@@ -260,7 +266,7 @@
        </widget>
       </item>
       <item row="6" column="0">
-       <widget class="QPushButton" name="pre">
+       <widget class="QPushButton" name="ce">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -268,7 +274,7 @@
          </sizepolicy>
         </property>
         <property name="text">
-         <string>+/-</string>
+         <string>CE</string>
         </property>
        </widget>
       </item>
@@ -376,7 +382,7 @@
      <x>0</x>
      <y>0</y>
      <width>445</width>
-     <height>22</height>
+     <height>31</height>
     </rect>
    </property>
   </widget>

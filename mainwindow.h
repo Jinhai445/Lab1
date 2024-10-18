@@ -1,7 +1,10 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include <QMap>
+#include <QKeyEvent>
+#include <QPushButton>
 #include <QMainWindow>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -16,25 +19,16 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    QMap<int,QPushButton*> digitsBTNs;
 private slots:
-    void btnNumClicked();
+    void btnShowClicked();
     void on_dot_clicked();
-
     void on_del_clicked();
-
     void on_finish_clicked();
-
-    void on_square_clicked();
-
     void on_squareRoot_clicked();
-
-    void on_ce_clicked();
-
-
     void on_inver_clicked();
-
-    void on_pre_clicked();
-
+    void on_ce_clicked();
+    virtual void keyPressEvent(QKeyEvent* event) ;
 private:
     Ui::MainWindow *ui;
 };
